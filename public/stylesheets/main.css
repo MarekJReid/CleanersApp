@@ -1,0 +1,31 @@
+.thumbnail img {
+    width: 100%;
+    
+}
+
+.thumbnail {
+    padding: 0;
+    
+}
+
+.thumbnail .caption-full{
+    padding: 1.5rem;
+}
+.leaveComment {
+    padding-top: 20rem;
+    display: inline;
+}
+
+.delete-form {
+    display: inline!important;
+    margin-left: 5rem!important;
+}
+
+.btn.btn-small.btn-danger.pull-right {
+    margin-left: .5rem;
+}
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}

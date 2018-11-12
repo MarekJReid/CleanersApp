@@ -1,0 +1,62 @@
+app.get("/cleanerProfiles", function (req, res) {
+            //get cleaners from db
+            Cleaner.find({}, function(allcleaners, err){
+                if(err){
+                    console.log(err);
+                } else {
+                    res.render("cleanersProfiles", {cleaners:allcleaners});
+                }
+            });
+        });
+
+
+
+        var cleaners = [{
+                name: "Joanne Blogs",
+                image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7880e3b80dd9960e65d543cd39d3540e&auto=format&fit=crop&w=668&q=80"
+            },
+            {
+                name: "Haig Mirador",
+                image: "https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67471a64554fe513569e4170ada4801d&auto=format&fit=crop&w=668&q=80"
+            },
+            {
+                name: "Ingi Yeli",
+                image: "https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9181fa2e4820c2bda893acc86731c6db&auto=format&fit=crop&w=2468&q=80"
+            },
+            {
+                name: "Joanne Blogs",
+                image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7880e3b80dd9960e65d543cd39d3540e&auto=format&fit=crop&w=668&q=80"
+            },
+            {
+                name: "Haig Mirador",
+                image: "https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67471a64554fe513569e4170ada4801d&auto=format&fit=crop&w=668&q=80"
+            },
+            {
+                name: "Ingi Yeli",
+                image: "https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9181fa2e4820c2bda893acc86731c6db&auto=format&fit=crop&w=2468&q=80"
+            },
+            {
+                name: "Joanne Blogs",
+                image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7880e3b80dd9960e65d543cd39d3540e&auto=format&fit=crop&w=668&q=80"
+            },
+            {
+                name: "Haig Mirador",
+                image: "https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67471a64554fe513569e4170ada4801d&auto=format&fit=crop&w=668&q=80"
+            },
+            {
+                name: "Ingi Yeli",
+                image: "https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9181fa2e4820c2bda893acc86731c6db&auto=format&fit=crop&w=2468&q=80"
+            },
+            {
+                name: "Joanne Blogs",
+                image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7880e3b80dd9960e65d543cd39d3540e&auto=format&fit=crop&w=668&q=80"
+            },
+            {
+                name: "Haig Mirador",
+                image: "https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67471a64554fe513569e4170ada4801d&auto=format&fit=crop&w=668&q=80"
+            },
+            {
+                name: "Ingi Yeli",
+                image: "https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9181fa2e4820c2bda893acc86731c6db&auto=format&fit=crop&w=2468&q=80"
+            }
+        ]

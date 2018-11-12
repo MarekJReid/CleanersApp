@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+    <h1 style = "text-align: center">Comments on her holiness to ... <%= cleaner.name %> </h1>
+        <div style= "width: 30%; margin: 2rem auto">
+        
+
+        <form action="/cleanerProfiles/<%= cleaner._id %>/comments" method="POST">
+            
+            
+            <div class ="form-group">
+            <input class="form-control" type="text" name="comment[text]" value="" placeholder="text">
+            </div>
+
+        
+                
+                
+                <button class="btn btn-primary btn-block" type="">Submit!</button><br />
+            </form>
+                <a href="/cleanerProfiles">
+                    <-- Go back</a> </div> </div> <% include ../partials/footer %>
+        </div>
+    </div>
+</div>
